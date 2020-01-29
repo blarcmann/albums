@@ -14,11 +14,15 @@ import AlbumList from './src/components/AlbumList';
 
 const App = () => {
   return (
-    <View>
+    <View style={styles}>
       <Header title="Albums" />
       <AlbumList />
     </View>
   );
+};
+
+const styles = {
+  flex: 1,
 };
 
 AppRegistry.registerComponent('albums', () => App);

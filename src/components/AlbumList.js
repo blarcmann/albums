@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View} from 'react-native';
+import {ScrollView} from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -35,7 +35,7 @@ class AlbumList extends Component {
     stateAlbums.forEach((album, i) => {
       albums.push(<AlbumDetail key={i} album={album} />);
     });
-    return <View>{albums}</View>;
+    return <ScrollView>{albums}</ScrollView>;
   }
 }
 
